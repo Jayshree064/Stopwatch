@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3A3737"
+    tools:context=".MainActivity">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="StopWatch"
+      android:textColor="@color/white"
+      android:gravity="center"
+      android:layout_marginTop="10dp"
+      android:textSize="30sp" />
+
+  <FrameLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="70dp"
+      android:layout_gravity="center">
+
+    <Button
+        android:id="@+id/startbtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/start_button"
+        android:text="START"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/pausebtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:text="PAUSE"
+        android:textSize="40sp"
+        android:background="@drawable/pause_button"/>
+
+  </FrameLayout>
+
+  <Chronometer
+      android:id="@+id/Chronometer"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:textSize="40sp"
+      android:layout_gravity="center"
+      android:textColor="@color/white"
+      android:textStyle="bold"
+      android:textAlignment="center" />
+
+  <Button
+      android:id="@+id/resetbtn"
+      android:layout_width="170dp"
+      android:layout_height="52sp"
+      android:text="RESET"
+      android:layout_marginTop="50dp"
+      android:layout_gravity="center"
+      android:textAlignment="center"
+      android:textSize="25sp"
+      android:background="@drawable/reset_button"/>
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="40dp"
+      android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/tv_lap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/lapbtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="250dp"
+        android:background="@drawable/ic_baseline_timelapse_24"/>
+  </LinearLayout>
+
+
+</LinearLayout>
